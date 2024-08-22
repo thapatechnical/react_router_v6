@@ -244,13 +244,13 @@ main {
   position: relative;
   background-color: #1c2833;
   /* background-image: linear-gradient(
-      to top right,
-      #3d86fa,
-      #4484fb,
-      #679eff,
-      #b3d2ff,
-      #ebf3fe
-    ); */
+    to top right,
+    #3d86fa,
+    #4484fb,
+    #679eff,
+    #b3d2ff,
+    #ebf3fe
+  ); */
   background-image: linear-gradient(
     to top right,
     #1c2833,
@@ -346,13 +346,14 @@ main .section-hero {
 }
 
 /*------------------------------
-   error page
-  ---------------------------- */
+ error page
+---------------------------- */
 
 .error-section {
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
