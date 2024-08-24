@@ -6,7 +6,7 @@ import { Contact } from "./pages/Contact";
 import AppLayout from "./components/layout/AppLayout";
 import "./App.css";
 import { ErrorPage } from "./pages/ErrorPage";
-// import { NotFound } from "./pages/NotFound";
+import { getMoviesData } from "./api/GetAPIData";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -26,29 +26,15 @@ const App = () => {
         {
           path: "/movie",
           element: <Movie />,
+          loader: getMoviesData,
         },
         {
           path: "/contact",
           element: <Contact />,
         },
-        // {
-        //   path: "*",
-        //   element: <NotFound />,
-        // },
       ],
     },
   ]);
-
-  //   const router = createBrowserRouter(
-  //     createRoutesFromElements(
-  //       <Route>
-  //         <Route path="/" element={<Home />} />
-  //         <Route path="/about" element={<About />} />
-  //         <Route path="/movie" element={<Movie />} />
-  //         <Route path="/contact" element={<Contact />} />
-  //       </Route>
-  //     )
-  //   );
 
   return <RouterProvider router={router} />;
 };
