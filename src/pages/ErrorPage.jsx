@@ -37,5 +37,5 @@ export const ErrorPage = () => {
   }
   console.log(error);
 
-  return <h1> The page you are looking does not exist </h1>;
+  return <h1> The page you are looking does not exist</h1>;
 };

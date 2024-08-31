@@ -344,6 +344,114 @@ main .section-hero {
   color: var(--buttonColor);
   border-bottom: 0.1rem solid var(--secondaryColor);
 }
+/*------------------------------
+/* Movie Card Details */
+/* ---------------------------- */
+.movie {
+  /* max-width: 100%; */
+  width: 60rem;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 0 5px 20px 10px rgba(0, 0, 0, 0.2);
+  /* overflow: hidden; */
+}
+
+.movie__hero {
+  flex: 0 0 45%;
+}
+
+.movie__img {
+  width: 100%;
+  display: block;
+}
+
+.movie__content {
+  background-color: #fff;
+  flex: 1;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie__price {
+  background: linear-gradient(to bottom, #a9c9ff 0%, #ffbbec 100%);
+  flex: 0 0 50px;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  writing-mode: vertical-lr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.heading__primary {
+  font-size: 16px;
+  margin-right: auto;
+  color: royalblue;
+}
+
+.fa-fire {
+  color: salmon;
+}
+
+.movie__tag {
+  font-size: 10px;
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 100px;
+  margin-right: 8px;
+  display: block;
+  text-transform: uppercase;
+}
+
+.movie__tag--1 {
+  background-color: #a9c9ff;
+}
+
+.movie__tag--2 {
+  background-color: #ffbbec;
+}
+
+.movie__description {
+  font-size: 14px;
+  width: 38rem;
+}
+
+.movie__details {
+  display: flex;
+  margin: auto;
+}
+
+.movie__detail {
+  font-size: 13px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.icons i {
+  margin-right: 3px;
+  font-size: 18px;
+}
+
+.icons-red {
+  color: salmon;
+}
+.icons-grey {
+  color: grey;
+}
+
+.icons-yellow {
+  color: rgb(190, 190, 71);
+}
 
 /*------------------------------
  error page
@@ -402,6 +510,23 @@ textarea {
 ::placeholder {
   text-transform: capitalize;
 }
+
+.contact-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_image {
+  max-width: 100%;
+  /* width: 30%; */
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 footer {
   width: 100%;
   background: var(--buttonColor);
